@@ -2,16 +2,35 @@ package AddressBook;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
 
   private Person testPerson;
-
+  private Person testPerson2;
+  private Person testPerson3;
   @BeforeEach
   void setUp() {
     testPerson = new Person("John","Doe","123 Main St","Fort Myers","FL","33901","239-555-1212");
+
+  }
+
+  @Test
+  void invalidPerson() throws Exception
+  {
+    // Invalid First Name
+    assertThrows(IllegalArgumentException.class,() -> {  testPerson2 = new Person("", "Doe", "123 Main St", "Fort Myers", "FL", "33901", "239-555-1212");} );
+    // Invalid Last Name
+    assertThrows(IllegalArgumentException.class,() -> { testPerson3 = new Person("John","","123 Main St","Fort Myers","FL","33901","239-555-1212");} );
+    // Invalid Address
+    //assertThrows(IllegalArgumentException.class,() -> { testPerson3 = new Person("John","Doe","","Fort Myers","FL","33901","239-555-1212");} );
+
   }
 
   @Test
@@ -36,7 +55,22 @@ class PersonTest {
 
   @Test
   void getState() {
-    assertEquals("FL", testPerson.getState());
+
+      String [] ValidStates = {"AL","AK", "AZ", "AR", "CA",
+              "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL",
+              "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA",
+              "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH",
+              "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR",
+              "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT",
+              "VA", "WA", "WV", "WI", "WY"};
+      Boolean isValidState = Arrays.asList(ValidStates).contains(testPerson.getState());
+
+      assertEquals("FL", testPerson.getState());
+
+      assertTrue(isValidState, testPerson.getState());
+
+
+
   }
 
   @Test
@@ -49,6 +83,7 @@ class PersonTest {
     assertEquals("239-555-1212", testPerson.getPhone());
   }
 
+
   @Test
   void TestToString() {
     assertEquals("Doe, John", testPerson.toString());
@@ -56,7 +91,14 @@ class PersonTest {
 
   @Test
   void containsString() {
+    assertEquals(true, testPerson.containsString("John"));
     assertEquals(true, testPerson.containsString("Doe"));
+    assertEquals(true, testPerson.containsString("123"));
+    assertEquals(true, testPerson.containsString("Fort"));
+    assertEquals(true, testPerson.containsString("FL"));
+    assertEquals(true, testPerson.containsString("33901"));
+    assertEquals(true, testPerson.containsString("239"));
+
     assertEquals(false, testPerson.containsString("Yo"));
   }
 
@@ -73,4 +115,6 @@ class PersonTest {
       testPerson.getField(7);
     });
   }
+
+
 }

@@ -1,10 +1,11 @@
 package AddressBook;
 
+import javax.swing.*;
 import java.util.regex.Pattern;
 
 
 public class Person {
-  
+
     public static final String[] fields =
             {
                     "Last Name",
@@ -24,12 +25,19 @@ public class Person {
     private String zip;
     private String phone;
 
- 
+
     public Person(String firstName, String lastName, String address, String city, String state, String zip, String phone) {
-        if (firstName == null || firstName.isEmpty())
-            throw new IllegalArgumentException("First name cannot be empty");
-        if (lastName == null || lastName.isEmpty())
+        if (firstName == null || firstName.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Please Enter a first name.", "Error", JOptionPane.INFORMATION_MESSAGE);
+       throw new IllegalArgumentException("First name cannot be empty");
+        }
+        if (lastName == null || lastName.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Please Enter a last name", "Error", JOptionPane.INFORMATION_MESSAGE);
             throw new IllegalArgumentException("Last name cannot be empty");
+        }
+
+
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -88,7 +96,6 @@ public class Person {
         return lastName + ", " + firstName;
     }
 
-  
     public boolean containsString(String findMe) {
         Pattern p = Pattern.compile(Pattern.quote(findMe), Pattern.CASE_INSENSITIVE);
         return p.matcher(firstName).find()
@@ -100,7 +107,6 @@ public class Person {
                 || p.matcher(phone).find();
     }
 
-   
     public String getField(int field) {
         switch (field) {
             case 0:
@@ -121,4 +127,7 @@ public class Person {
                 throw new IllegalArgumentException("Field number out of bounds");
         }
     }
+
+
+
 }
