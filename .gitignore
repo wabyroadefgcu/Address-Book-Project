@@ -21,3 +21,5 @@
 *.rar
 
 [Oo]ut
+
+.DS_Store

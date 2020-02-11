@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390282cd-222c-43a2-a11e-752fdef8de8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/AddressBook/AddressBookGUITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/AddressBook/AddressBookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AddressBook/AddressBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AddressBook/AddressBookTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,14 +81,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="2" />
-          <entry key="java" value="4740" />
+          <entry key="gitignore" value="4" />
+          <entry key="java" value="9319" />
+          <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4740" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="9319" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -110,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AddressBook/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -165,11 +165,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AddressBook/AddressBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="191">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1486#1487#0" expanded="true" />
+                <element signature="e#1542#1543#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,10 +185,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/AddressBook/AddressBookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
+            <state relative-caret-position="330">
+              <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2450#2451#0" expanded="true" />
+                <element signature="e#2512#2513#0" expanded="true" />
+                <element signature="e#2529#2530#0" expanded="true" />
+                <element signature="e#2591#2592#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -279,7 +290,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581385091570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581393110891" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -311,21 +322,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddressBookTest.add">
-    <configuration name="AddressBookGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AddressBook.AddressBookGUI" />
-      <module name="AddressBook-Active" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AddressBook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddressBookTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AddressBookTest">
+    <configuration name="AddressBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AddressBook-Active" />
       <extension name="coverage">
         <pattern>
@@ -335,13 +333,11 @@
       </extension>
       <option name="PACKAGE_NAME" value="AddressBook" />
       <option name="MAIN_CLASS_NAME" value="AddressBook.AddressBookTest" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddressBookTest.getPersons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressBookTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AddressBook-Active" />
       <extension name="coverage">
         <pattern>
@@ -351,21 +347,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="AddressBook" />
       <option name="MAIN_CLASS_NAME" value="AddressBook.AddressBookTest" />
-      <option name="METHOD_NAME" value="getPersons" />
+      <option name="METHOD_NAME" value="clear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in AddressBook-Active" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AddressBook-Active" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.getAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressBookTest.getColumnCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AddressBook-Active" />
       <extension name="coverage">
         <pattern>
@@ -374,27 +362,59 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AddressBook" />
-      <option name="MAIN_CLASS_NAME" value="AddressBook.PersonTest" />
-      <option name="METHOD_NAME" value="getAddress" />
+      <option name="MAIN_CLASS_NAME" value="AddressBook.AddressBookTest" />
+      <option name="METHOD_NAME" value="getColumnCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddressBookTest.getColumnName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AddressBook-Active" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AddressBook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AddressBook" />
+      <option name="MAIN_CLASS_NAME" value="AddressBook.AddressBookTest" />
+      <option name="METHOD_NAME" value="getColumnName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddressBookTest.getValueAt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AddressBook-Active" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AddressBook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AddressBook" />
+      <option name="MAIN_CLASS_NAME" value="AddressBook.AddressBookTest" />
+      <option name="METHOD_NAME" value="getValueAt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AddressBookGUI" />
-      <item itemvalue="JUnit.All in AddressBook-Active" />
-      <item itemvalue="JUnit.PersonTest.getAddress" />
-      <item itemvalue="JUnit.AddressBookTest.getPersons" />
-      <item itemvalue="JUnit.AddressBookTest.add" />
+      <item itemvalue="JUnit.AddressBookTest" />
+      <item itemvalue="JUnit.AddressBookTest.clear" />
+      <item itemvalue="JUnit.AddressBookTest.getColumnCount" />
+      <item itemvalue="JUnit.AddressBookTest.getValueAt" />
+      <item itemvalue="JUnit.AddressBookTest.getColumnName" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddressBookTest.add" />
-        <item itemvalue="JUnit.AddressBookTest.getPersons" />
-        <item itemvalue="JUnit.All in AddressBook-Active" />
-        <item itemvalue="JUnit.PersonTest.getAddress" />
-        <item itemvalue="Application.AddressBookGUI" />
+        <item itemvalue="JUnit.AddressBookTest" />
+        <item itemvalue="JUnit.AddressBookTest.getColumnName" />
+        <item itemvalue="JUnit.AddressBookTest.getValueAt" />
+        <item itemvalue="JUnit.AddressBookTest.getColumnCount" />
+        <item itemvalue="JUnit.AddressBookTest.clear" />
       </list>
     </recent_temporary>
   </component>
@@ -412,44 +432,44 @@
       <workItem from="1581301342313" duration="200000" />
       <workItem from="1581301546447" duration="54000" />
       <workItem from="1581355592866" duration="405000" />
-      <workItem from="1581356109118" duration="4102000" />
+      <workItem from="1581356109118" duration="6719000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_AddressBook-Active - 2020.02.10 at 12h 39m 01s.xml">
-      <configuration name="All in AddressBook-Active" configurationId="JUnit" />
+    <history-entry file="AddressBookTest - 2020.02.10 at 22h 26m 25s.xml">
+      <configuration name="AddressBookTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getAddress - 2020.02.10 at 12h 40m 19s.xml">
-      <configuration name="PersonTest.getAddress" configurationId="JUnit" />
+    <history-entry file="AddressBookTest - 2020.02.10 at 22h 29m 34s.xml">
+      <configuration name="AddressBookTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_AddressBook-Active - 2020.02.10 at 12h 47m 15s.xml">
-      <configuration name="All in AddressBook-Active" configurationId="JUnit" />
+    <history-entry file="AddressBookTest - 2020.02.10 at 22h 31m 06s.xml">
+      <configuration name="AddressBookTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_AddressBook-Active - 2020.02.10 at 12h 48m 43s.xml">
-      <configuration name="All in AddressBook-Active" configurationId="JUnit" />
+    <history-entry file="AddressBookTest_clear - 2020.02.10 at 22h 36m 50s.xml">
+      <configuration name="AddressBookTest.clear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_AddressBook-Active - 2020.02.10 at 12h 50m 01s.xml">
-      <configuration name="All in AddressBook-Active" configurationId="JUnit" />
+    <history-entry file="AddressBookTest - 2020.02.10 at 22h 37m 01s.xml">
+      <configuration name="AddressBookTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressBookTest_getPersons - 2020.02.10 at 20h 17m 07s.xml">
-      <configuration name="AddressBookTest.getPersons" configurationId="JUnit" />
+    <history-entry file="AddressBookTest_getColumnCount - 2020.02.10 at 22h 42m 35s.xml">
+      <configuration name="AddressBookTest.getColumnCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressBookTest_getPersons - 2020.02.10 at 20h 19m 30s.xml">
-      <configuration name="AddressBookTest.getPersons" configurationId="JUnit" />
+    <history-entry file="AddressBookTest_getValueAt - 2020.02.10 at 22h 45m 15s.xml">
+      <configuration name="AddressBookTest.getValueAt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressBookTest_getPersons - 2020.02.10 at 20h 21m 42s.xml">
-      <configuration name="AddressBookTest.getPersons" configurationId="JUnit" />
+    <history-entry file="AddressBookTest_getValueAt - 2020.02.10 at 22h 45m 46s.xml">
+      <configuration name="AddressBookTest.getValueAt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressBookTest_getPersons - 2020.02.10 at 20h 23m 03s.xml">
-      <configuration name="AddressBookTest.getPersons" configurationId="JUnit" />
+    <history-entry file="AddressBookTest_getColumnName - 2020.02.10 at 22h 47m 39s.xml">
+      <configuration name="AddressBookTest.getColumnName" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressBookTest_getPersons - 2020.02.10 at 20h 24m 32s.xml">
-      <configuration name="AddressBookTest.getPersons" configurationId="JUnit" />
+    <history-entry file="AddressBookTest_getColumnName - 2020.02.10 at 22h 48m 07s.xml">
+      <configuration name="AddressBookTest.getColumnName" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6553000" />
+    <option name="totallyTimeSpent" value="9170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="29" width="1675" height="1004" extended-state="0" />
@@ -465,8 +485,8 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32894737" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -506,23 +526,10 @@
     <entry file="file://$PROJECT_DIR$/AddressBook/Person.java" />
     <entry file="file://$PROJECT_DIR$/AddressBook/PersonDialog.java" />
     <entry file="file://$PROJECT_DIR$/AddressBook/SpringUtilities.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab5acdac-bd8d-4982-b031-5827c1c5cf55/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AddressBook/AddressBookController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddressBook/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -566,23 +573,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddressBook/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab5acdac-bd8d-4982-b031-5827c1c5cf55/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AddressBook/AddressBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="191">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/AddressBook/AddressBookTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
+        <state relative-caret-position="330">
+          <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2450#2451#0" expanded="true" />
+            <element signature="e#2512#2513#0" expanded="true" />
+            <element signature="e#2529#2530#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
           </folding>
         </state>
       </provider>

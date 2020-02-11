@@ -39,105 +39,66 @@ class AddressBookTest {
   @Test
   void add() {
     testAddressBookObject.add(new Person("Added","Person","","","","",""));
-    int currentPersonCount = testAddressBookObject.getPersons().length;
+    int currentPersonCount = testAddressBookObject.getRowCount();
     assertEquals("Added", testAddressBookObject.getPersons()[currentPersonCount-1].getFirstName());
     assertEquals(4, currentPersonCount);
   }
 
   @Test
   void set() {
+    // Set new person in third spot in the list of Person objects
+    Person tempPerson = new Person("Another","Person","","","","","");
+    testAddressBookObject.set(2,tempPerson);
+    assertEquals("Another", testAddressBookObject.getPersons()[2].getFirstName());
   }
 
   @Test
   void remove() {
+    testAddressBookObject.remove(0);
+    assertEquals("Jane", testAddressBookObject.getPersons()[0].getFirstName());
   }
 
   @Test
   void get() {
+    Person testPerson = testAddressBookObject.get(0);
+    assertEquals("John", testAddressBookObject.get(0).getFirstName());
+    assertEquals("Doe", testAddressBookObject.get(0).getLastName());
   }
 
   @Test
   void clear() {
+    testAddressBookObject.clear();
+    int currentPersonCount = testAddressBookObject.getRowCount();
+    assertEquals(0, currentPersonCount);
+    assertThrows(IndexOutOfBoundsException.class, () -> {
+      testAddressBookObject.get(0);
+    });
   }
 
   @Test
   void getRowCount() {
+    assertEquals(3, testAddressBookObject.getRowCount());
   }
 
   @Test
   void getColumnCount() {
+    assertEquals(7, testAddressBookObject.getColumnCount());
   }
 
   @Test
   void getValueAt() {
+    assertEquals("John", testAddressBookObject.get(0).getField(1));
+    assertEquals("T", testAddressBookObject.get(2).getField(0));
   }
 
   @Test
   void getColumnName() {
+    assertEquals("Last Name", testAddressBookObject.getColumnName(0));
+    assertEquals("First Name", testAddressBookObject.getColumnName(1));
+    assertEquals("Address", testAddressBookObject.getColumnName(2));
+    assertEquals("City", testAddressBookObject.getColumnName(3));
+    assertEquals("State", testAddressBookObject.getColumnName(4));
+    assertEquals("ZIP", testAddressBookObject.getColumnName(5));
+    assertEquals("Phone", testAddressBookObject.getColumnName(6));
   }
-
-  @Test
-  void getColumnName1() {
-  }
-
-  @Test
-  void findColumn() {
-  }
-
-  @Test
-  void getColumnClass() {
-  }
-
-  @Test
-  void isCellEditable() {
-  }
-
-  @Test
-  void setValueAt() {
-  }
-
-  @Test
-  void addTableModelListener() {
-  }
-
-  @Test
-  void removeTableModelListener() {
-  }
-
-  @Test
-  void getTableModelListeners() {
-  }
-
-  @Test
-  void fireTableDataChanged() {
-  }
-
-  @Test
-  void fireTableStructureChanged() {
-  }
-
-  @Test
-  void fireTableRowsInserted() {
-  }
-
-  @Test
-  void fireTableRowsUpdated() {
-  }
-
-  @Test
-  void fireTableRowsDeleted() {
-  }
-
-  @Test
-  void fireTableCellUpdated() {
-  }
-
-  @Test
-  void fireTableChanged() {
-  }
-
-  @Test
-  void getListeners() {
-  }
-
 }
