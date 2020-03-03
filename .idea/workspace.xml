@@ -1,272 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="390282cd-222c-43a2-a11e-752fdef8de8c" name="Default Changelist" comment="Fix Merging Error">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="b671520c-6f07-4c3d-8f53-f5ef9e51f414" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Address-Book-Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ab5acdac-bd8d-4982-b031-5827c1c5cf55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ab5acdac-bd8d-4982-b031-5827c1c5cf55/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/istack_commons_runtime_2_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_23_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddressBook-Active.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AddressBook-Active.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddressBook/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddressBook/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/AddressBook/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/AddressBook/PersonTest.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="71" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1Xd8EKAmT8ET1ouMkAsxqfY4UmR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1Yd8IgTrU6WNLLmOTflhESZXbAv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="sqlite" />
-    <property name="Downloaded.Files.Path.Enabled" value="true" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581356998014" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="AddressBook" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
-  </component>
-  <component name="RunManager" selected="JUnit.PersonTest">
-    <configuration name="PersonDialogTest.PersonDialog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AddressBook-Active" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AddressBook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AddressBook" />
-      <option name="MAIN_CLASS_NAME" value="AddressBook.PersonDialogTest" />
-      <option name="METHOD_NAME" value="PersonDialog" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AddressBook-Active" />
-      <extension name="coverage" runner="jacoco">
-        <pattern>
-          <option name="PATTERN" value="AddressBook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AddressBook" />
-      <option name="MAIN_CLASS_NAME" value="AddressBook.PersonTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.Person" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AddressBook-Active" />
-      <extension name="coverage" runner="jacoco">
-        <pattern>
-          <option name="PATTERN" value="AddressBook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AddressBook" />
-      <option name="MAIN_CLASS_NAME" value="AddressBook.PersonTest" />
-      <option name="METHOD_NAME" value="Person" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.getFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AddressBook-Active" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AddressBook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AddressBook" />
-      <option name="MAIN_CLASS_NAME" value="AddressBook.PersonTest" />
-      <option name="METHOD_NAME" value="getFirstName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.invalidPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AddressBook-Active" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AddressBook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AddressBook" />
-      <option name="MAIN_CLASS_NAME" value="AddressBook.PersonTest" />
-      <option name="METHOD_NAME" value="invalidPerson" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.PersonTest" />
-      <item itemvalue="JUnit.PersonDialogTest.PersonDialog" />
-      <item itemvalue="JUnit.PersonTest.getFirstName" />
-      <item itemvalue="JUnit.PersonTest.Person" />
-      <item itemvalue="JUnit.PersonTest.invalidPerson" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PersonTest" />
-        <item itemvalue="JUnit.PersonTest.invalidPerson" />
-        <item itemvalue="JUnit.PersonTest.Person" />
-        <item itemvalue="JUnit.PersonTest.getFirstName" />
-        <item itemvalue="JUnit.PersonDialogTest.PersonDialog" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="390282cd-222c-43a2-a11e-752fdef8de8c" name="Default Changelist" comment="" />
-      <created>1581298362622</created>
+      <changelist id="b671520c-6f07-4c3d-8f53-f5ef9e51f414" name="Default Changelist" comment="" />
+      <created>1583261032451</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1581298362622</updated>
-      <workItem from="1581298364099" duration="1792000" />
-      <workItem from="1581301342313" duration="200000" />
-      <workItem from="1581301546447" duration="54000" />
-      <workItem from="1581355592866" duration="405000" />
-      <workItem from="1581356109118" duration="721000" />
-      <workItem from="1581364499425" duration="12433000" />
+      <updated>1583261032451</updated>
+      <workItem from="1583261034385" duration="670000" />
+      <workItem from="1583261849990" duration="1587000" />
     </task>
-    <task id="LOCAL-00001" summary="Fix Merging Error">
-      <created>1581364698488</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1581364698488</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/Address-Book-Project" />
-    </ignored-roots>
-    <MESSAGE value="Fix Merging Error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Merging Error" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Address_Book_Project$AddressBookGUI.ic" NAME="AddressBookGUI Coverage Results" MODIFIED="1581376191281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonTest_Person.exec" NAME="PersonTest.Person Coverage Results" MODIFIED="1581379407043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonTest_getState.ic" NAME="PersonTest.getState Coverage Results" MODIFIED="1581369992295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonDialogTest.ic" NAME="PersonDialogTest Coverage Results" MODIFIED="1581376748454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonTest.exec" NAME="PersonTest Coverage Results" MODIFIED="1581382054297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1581375455107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonTest_invalidPerson.ic" NAME="PersonTest.invalidPerson Coverage Results" MODIFIED="1581381706914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonTest_getFirstName.ic" NAME="PersonTest.getFirstName Coverage Results" MODIFIED="1581378271899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonTest_Person.ic" NAME="PersonTest.Person Coverage Results" MODIFIED="1581378803470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Address_Book_Project$PersonDialogTest.exec" NAME="PersonDialogTest Coverage Results" MODIFIED="1581377398527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>AddressBook.*</FILTER>
-    </SUITE>
+  <component name="WindowStateProjectService">
+    <state x="555" y="700" width="800" height="683" key="#Plugins" timestamp="1583261791446">
+      <screen x="0" y="512" width="1920" height="1053" />
+    </state>
+    <state x="555" y="700" width="800" height="683" key="#Plugins/0.512.1920.1053/1920.0.1080.1920@0.512.1920.1053" timestamp="1583261791446" />
+    <state x="449" y="673" width="1022" height="736" key="SettingsEditor" timestamp="1583263355293">
+      <screen x="0" y="512" width="1920" height="1053" />
+    </state>
+    <state x="449" y="673" width="1022" height="736" key="SettingsEditor/0.512.1920.1053/1920.0.1080.1920@0.512.1920.1053" timestamp="1583263355293" />
+    <state x="614" y="866" key="com.intellij.ide.util.TipDialog" timestamp="1583261851953">
+      <screen x="0" y="512" width="1920" height="1053" />
+    </state>
+    <state x="614" y="866" key="com.intellij.ide.util.TipDialog/0.512.1920.1053/1920.0.1080.1920@0.512.1920.1053" timestamp="1583261851953" />
+    <state x="623" y="744" width="672" height="678" key="search.everywhere.popup" timestamp="1583261772393">
+      <screen x="0" y="512" width="1920" height="1053" />
+    </state>
+    <state x="623" y="744" width="672" height="678" key="search.everywhere.popup/0.512.1920.1053/1920.0.1080.1920@0.512.1920.1053" timestamp="1583261772393" />
   </component>
 </project>

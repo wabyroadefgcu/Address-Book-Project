@@ -15,12 +15,22 @@ class PersonTest {
   private Person testPerson;
   private Person testPerson2;
   private Person testPerson3;
+
+  /**
+   * setUp method executes before each @Test annotated method.
+   * Creates a new Person object named testPerson
+   */
   @BeforeEach
   void setUp() {
     testPerson = new Person("John","Doe","123 Main St","Fort Myers","FL","33901","239-555-1212");
-
   }
 
+  /**
+   * Type: Unit Test
+   * Tests for invalid person object.
+   * Person throws IllegalArgumentException when missing firstName, lastName, or address.
+   * @throws Exception
+   */
   @Test
   void invalidPerson() throws Exception
   {
@@ -29,30 +39,61 @@ class PersonTest {
     // Invalid Last Name
     assertThrows(IllegalArgumentException.class,() -> { testPerson3 = new Person("John","","123 Main St","Fort Myers","FL","33901","239-555-1212");} );
     // Invalid Address
-    //assertThrows(IllegalArgumentException.class,() -> { testPerson3 = new Person("John","Doe","","Fort Myers","FL","33901","239-555-1212");} );
+    assertThrows(IllegalArgumentException.class,() -> { testPerson3 = new Person("John","Doe","","Fort Myers","FL","33901","239-555-1212");} );
 
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getFirstName method,
+   * getFirstName must return 'John' from testPerson
+   * @throws Exception
+   */
   @Test
   void getFirstName() {
     assertEquals("John", testPerson.getFirstName());
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getLastName method,
+   * getLastName must return 'Doe' from testPerson
+   * @throws Exception
+   */
   @Test
   void getLastName() {
     assertEquals("Doe", testPerson.getLastName());
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getAddress method,
+   * getAddress must return '123 Main St' from testPerson
+   * @throws Exception
+   */
   @Test
   void getAddress() {
     assertEquals("123 Main St", testPerson.getAddress());
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getCity method,
+   * getCity must return 'Fort Myers' from testPerson
+   * @throws Exception
+   */
   @Test
   void getCity() {
     assertEquals("Fort Myers", testPerson.getCity());
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getState method,
+   * getState must return 'FL' from testPerson
+   * getState must return valid state
+   * @throws Exception
+   */
   @Test
   void getState() {
 
@@ -66,29 +107,49 @@ class PersonTest {
       Boolean isValidState = Arrays.asList(ValidStates).contains(testPerson.getState());
 
       assertEquals("FL", testPerson.getState());
-
       assertTrue(isValidState, testPerson.getState());
-
-
-
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getZip method,
+   * getZip must return '33901' from testPerson
+   * @throws Exception
+   */
   @Test
   void getZip() {
     assertEquals("33901", testPerson.getZip());
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getPhone method,
+   * getPhone must return '239-555-1212' from testPerson
+   * @throws Exception
+   */
   @Test
   void getPhone() {
     assertEquals("239-555-1212", testPerson.getPhone());
   }
 
-
+  /**
+   * Type: Unit Test
+   * Tests toString method,
+   * toString must return 'Doe, John' from testPerson in correct format.
+   * @throws Exception
+   */
   @Test
   void TestToString() {
     assertEquals("Doe, John", testPerson.toString());
   }
 
+  /**
+   * Type: Unit Test
+   * Tests containsString method
+   * containsString must return True if contains string from testPerson.
+   * containsString must return False if testPerson does not contain desired string.
+   * @throws Exception
+   */
   @Test
   void containsString() {
     assertEquals(true, testPerson.containsString("John"));
@@ -102,6 +163,13 @@ class PersonTest {
     assertEquals(false, testPerson.containsString("Yo"));
   }
 
+  /**
+   * Type: Unit Test
+   * Tests getField method,
+   * getField must return True from testPerson if field exists.
+   * getField must throw IllegalArgumentException if field does not exist.
+   * @throws Exception
+   */
   @Test
   void getField() {
     assertEquals("Doe", testPerson.getField(0));
