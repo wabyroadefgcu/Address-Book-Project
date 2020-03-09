@@ -8,12 +8,14 @@ import java.util.List;
 public class AddressBook extends AbstractTableModel {
     private List<Person> persons = new ArrayList<>();
 
+    AddressBook(){}
    
     public Person[] getPersons() {
         return persons.toArray(new Person[persons.size()]);
     }
 
-  
+
+
     public void add(Person p) {
         int newIndex = persons.size();
         persons.add(p);

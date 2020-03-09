@@ -1,7 +1,6 @@
 package AddressBook;
 
 import AddressBook.Person;
-import com.sun.istack.internal.Nullable;
 
 import javax.swing.*;
 import java.awt.*;
@@ -111,7 +110,7 @@ public class PersonDialog extends JDialog {
     }
 
   
-    public PersonDialog(Frame parent, @Nullable Person person) {
+    public PersonDialog(Frame parent, Person person) {
         this(parent);
         if (person == null)
             return;

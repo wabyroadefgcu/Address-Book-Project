@@ -47,7 +47,6 @@ class PersonTest {
    * Type: Unit Test
    * Tests getFirstName method,
    * getFirstName must return 'John' from testPerson
-   * @throws Exception
    */
   @Test
   void getFirstName() {
@@ -58,7 +57,6 @@ class PersonTest {
    * Type: Unit Test
    * Tests getLastName method,
    * getLastName must return 'Doe' from testPerson
-   * @throws Exception
    */
   @Test
   void getLastName() {
@@ -69,7 +67,6 @@ class PersonTest {
    * Type: Unit Test
    * Tests getAddress method,
    * getAddress must return '123 Main St' from testPerson
-   * @throws Exception
    */
   @Test
   void getAddress() {
@@ -80,7 +77,6 @@ class PersonTest {
    * Type: Unit Test
    * Tests getCity method,
    * getCity must return 'Fort Myers' from testPerson
-   * @throws Exception
    */
   @Test
   void getCity() {
@@ -92,7 +88,6 @@ class PersonTest {
    * Tests getState method,
    * getState must return 'FL' from testPerson
    * getState must return valid state
-   * @throws Exception
    */
   @Test
   void getState() {
@@ -114,7 +109,6 @@ class PersonTest {
    * Type: Unit Test
    * Tests getZip method,
    * getZip must return '33901' from testPerson
-   * @throws Exception
    */
   @Test
   void getZip() {
@@ -125,7 +119,6 @@ class PersonTest {
    * Type: Unit Test
    * Tests getPhone method,
    * getPhone must return '239-555-1212' from testPerson
-   * @throws Exception
    */
   @Test
   void getPhone() {
@@ -136,7 +129,6 @@ class PersonTest {
    * Type: Unit Test
    * Tests toString method,
    * toString must return 'Doe, John' from testPerson in correct format.
-   * @throws Exception
    */
   @Test
   void TestToString() {
@@ -148,7 +140,6 @@ class PersonTest {
    * Tests containsString method
    * containsString must return True if contains string from testPerson.
    * containsString must return False if testPerson does not contain desired string.
-   * @throws Exception
    */
   @Test
   void containsString() {
