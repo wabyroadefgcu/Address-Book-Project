@@ -62,6 +62,12 @@ class AddressBookTest {
         testAddressBook.remove(0);
         // Check that person has been removed.
         assertEquals(1, testAddressBook.getRowCount());
+
+        // Test removal of person that does not exist
+        assertThrows(IndexOutOfBoundsException.class, () -> {
+            testAddressBook.remove(3);
+        });
+
     }
 
     /**
@@ -146,6 +152,10 @@ class AddressBookTest {
 
         assertEquals("Last Name", testAddressBook.getColumnName(0));
         assertEquals("State", testAddressBook.getColumnName(4));
+
+        assertThrows(IndexOutOfBoundsException.class, () -> {
+            testAddressBook.getColumnName(8);
+        });
     }
 
     /**
