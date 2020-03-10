@@ -8,15 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AddressBookGUITest {
 
-  @BeforeEach
-  void setUp() {
-  }
-
-  @AfterEach
-  void tearDown() {
-  }
-
   @Test
   void main() {
+    // Do nothing
   }
 }
