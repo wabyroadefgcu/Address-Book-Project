@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="identifier.sqlite" uuid="ab5acdac-bd8d-4982-b031-5827c1c5cf55">
+    <data-source source="LOCAL" name="FGCU Address Book" uuid="b550c239-ba09-40e0-b20c-edcf99c6ad8b">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
-      <driver-properties>
-        <property name="enable_load_extension" value="true" />
-      </driver-properties>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/SQLite DB/FGCU Address Book</jdbc-url>
     </data-source>
   </component>
 </project>

@@ -1,6 +1,5 @@
 package AddressBook;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,94 +10,171 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AddressBookTest {
 
-  AddressBook testAddressBookObject;
 
-  @BeforeEach
-  void setUp() {
-    testAddressBookObject = new AddressBook();
-    testAddressBookObject.add(new Person("John","Doe","123 Main St","Fort Myers","FL","33901","239-555-1212"));
-    testAddressBookObject.add(new Person("Jane","Doe","111 FGCU Pkwy","Fort Myers","FL","33912","239-555-1210"));
-    testAddressBookObject.add(new Person("Mr","T","","","","","239-555-0909"));
-  }
+    private Person testPerson;
+    private Person testPerson2;
+    private AddressBook testAddressBook;
 
-  @AfterEach
-  void tearDown() {
 
-  }
+    /**
+     * setUp method executes before each @Test annotated method.
+     * Creates a new Person object named testPerson
+     */
+    @BeforeEach
+    void setUp() {
+        testAddressBook = new AddressBook();
+        testPerson = new Person("John","Doe","123 Main St","Fort Myers","FL","33901","239-555-1212");
+        testPerson2 = new Person("Mike","Smith","111 Fourth St","Naples","FL","33333","239-123-4567");
+    }
 
-  @Test
-  void getPersons() {
-    // TODO: Look into making this test more independent, as it currently depends on Person class (mock??)
-    Person[] tempArray = testAddressBookObject.getPersons();
-    assertEquals(3, tempArray.length);
-    assertEquals("John", tempArray[0].getFirstName());
-    assertEquals("Jane", tempArray[1].getFirstName());
-    assertEquals("T", tempArray[2].getLastName());
-  }
 
-  @Test
-  void add() {
-    testAddressBookObject.add(new Person("Added","Person","","","","",""));
-    int currentPersonCount = testAddressBookObject.getRowCount();
-    assertEquals("Added", testAddressBookObject.getPersons()[currentPersonCount-1].getFirstName());
-    assertEquals(4, currentPersonCount);
-  }
+    /**
+     * Type: Unit Test
+     * Tests adding persons to Addressbook,
+     * AddressBook.get(index) must return testPerson and testPerson2 objects
+     */
+    @Test
+    void addPersonTest(){
 
-  @Test
-  void set() {
-    // Set new person in third spot in the list of Person objects
-    Person tempPerson = new Person("Another","Person","","","","","");
-    testAddressBookObject.set(2,tempPerson);
-    assertEquals("Another", testAddressBookObject.getPersons()[2].getFirstName());
-  }
+        testAddressBook.add(testPerson);
+        testAddressBook.add(testPerson2);
 
-  @Test
-  void remove() {
-    testAddressBookObject.remove(0);
-    assertEquals("Jane", testAddressBookObject.getPersons()[0].getFirstName());
-  }
+        assertEquals(testPerson, testAddressBook.get(0));
+        assertEquals(testPerson2, testAddressBook.get(1));
+    }
 
-  @Test
-  void get() {
-    Person testPerson = testAddressBookObject.get(0);
-    assertEquals("John", testAddressBookObject.get(0).getFirstName());
-    assertEquals("Doe", testAddressBookObject.get(0).getLastName());
-  }
+    /**
+     * Type: Unit Test
+     * Tests removing person from AddressBook,
+     * AddressBook.remove(index) should remove person object from AddressBook
+     */
+    @Test
+    void removePersonTest(){
 
-  @Test
-  void clear() {
-    testAddressBookObject.clear();
-    int currentPersonCount = testAddressBookObject.getRowCount();
-    assertEquals(0, currentPersonCount);
-    assertThrows(IndexOutOfBoundsException.class, () -> {
-      testAddressBookObject.get(0);
-    });
-  }
+        // Add two persons to AddressBook
+        testAddressBook.add(testPerson);
+        testAddressBook.add(testPerson2);
 
-  @Test
-  void getRowCount() {
-    assertEquals(3, testAddressBookObject.getRowCount());
-  }
+        // Check that both persons have been added
+        assertEquals(2, testAddressBook.getRowCount());
 
-  @Test
-  void getColumnCount() {
-    assertEquals(7, testAddressBookObject.getColumnCount());
-  }
+        // Remove person from AddressBook
+        testAddressBook.remove(0);
+        // Check that person has been removed.
+        assertEquals(1, testAddressBook.getRowCount());
 
-  @Test
-  void getValueAt() {
-    assertEquals("John", testAddressBookObject.get(0).getField(1));
-    assertEquals("T", testAddressBookObject.get(2).getField(0));
-  }
+        // Test removal of person that does not exist
+        assertThrows(IndexOutOfBoundsException.class, () -> {
+            testAddressBook.remove(3);
+        });
 
-  @Test
-  void getColumnName() {
-    assertEquals("Last Name", testAddressBookObject.getColumnName(0));
-    assertEquals("First Name", testAddressBookObject.getColumnName(1));
-    assertEquals("Address", testAddressBookObject.getColumnName(2));
-    assertEquals("City", testAddressBookObject.getColumnName(3));
-    assertEquals("State", testAddressBookObject.getColumnName(4));
-    assertEquals("ZIP", testAddressBookObject.getColumnName(5));
-    assertEquals("Phone", testAddressBookObject.getColumnName(6));
-  }
+    }
+
+    /**
+     * Type: Unit Test
+     * Tests updating person in AddressBook,
+     * AddressBook.set(index, person) should update person object in AddressBook
+     */
+    @Test
+    void setPersonTest(){
+        // Add testPerson to AddressBook
+        testAddressBook.add(testPerson);
+        // Check that index 0 contains testPerson
+        assertEquals(testPerson, testAddressBook.get(0));
+
+        // Replace testPerson with testPerson2
+        testAddressBook.set(0, testPerson2);
+        // Check that index 0 now contains testPerson2
+        assertEquals(testPerson2, testAddressBook.get(0));
+    }
+
+    /**
+     * Type: Unit Test
+     * Tests clearing AddressBook,
+     * AddressBook.clear() should remove all person objects from AddressBook
+     */
+    @Test
+    void clearAddressBook(){
+
+        // Add two persons to AddressBook
+        testAddressBook.add(testPerson);
+        testAddressBook.add(testPerson2);
+        // Check that AddressBook contains two persons
+        assertEquals(2, testAddressBook.getRowCount());
+
+        // Clear AddressBook
+        testAddressBook.clear();
+        // Check that AddressBook is empty.
+        assertEquals(0, testAddressBook.getRowCount());
+    }
+
+    /**
+     * Type: Unit Test
+     * AddressBook.getColumnCount() should return 7
+     */
+    @Test
+    void getColumnCountTest(){
+
+        testAddressBook.add(testPerson);
+        assertEquals(7, testAddressBook.getColumnCount());
+
+    }
+
+    /**
+     * Type: Unit Test
+     * Tests getValueAt method in AddressBook,
+     * AddressBook.getValueat(row, column) should return value from specified row,column
+     */
+    @Test
+    void getValueAt(){
+
+        // Add two person objects to AddressBook
+        testAddressBook.add(testPerson);
+        testAddressBook.add(testPerson2);
+
+        // Check that getValueAt returns the correct value
+        assertEquals("Fort Myers", testAddressBook.getValueAt(0, 3));
+        assertEquals("Mike", testAddressBook.getValueAt(1, 1) );
+
+        // Check that Exception is thrown when index does not exist.
+        assertThrows(IndexOutOfBoundsException.class, () -> {
+            testAddressBook.getValueAt(2,2);
+        });
+    }
+
+    /**
+     * Type: Unit Test
+     * Tests getColumnName method in AddressBook,
+     * AddressBook.getColumnName(column) should return name of specified column
+     */
+    @Test
+    void getColumnNameTest(){
+
+        assertEquals("Last Name", testAddressBook.getColumnName(0));
+        assertEquals("State", testAddressBook.getColumnName(4));
+
+        assertThrows(IndexOutOfBoundsException.class, () -> {
+            testAddressBook.getColumnName(8);
+        });
+    }
+
+    /**
+     * Type: Unit Test
+     * Tests getPersons method in AddressBook,
+     * AddressBook.getPersons() should return array of person objects in AddressBook
+     */
+    @Test
+    void getPersonsTest(){
+        // Create new ArrayList and add two person objects
+        List<Person> personsList = new ArrayList<>();
+        personsList.add(testPerson);
+        personsList.add(testPerson2);
+
+        // Add same two person objects to AddressBook
+        testAddressBook.add(testPerson);
+        testAddressBook.add(testPerson2);
+
+        // Check that returned array is the same.
+        assertArrayEquals(personsList.toArray(), testAddressBook.getPersons());
+    }
 }
