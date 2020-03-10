@@ -1,7 +1,17 @@
 package AddressBook;
 
+import com.google.common.jimfs.Configuration;
+import com.google.common.jimfs.Jimfs;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.rules.TemporaryFolder;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.sql.SQLException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -11,18 +21,20 @@ public class AddressBookControllerTest {
     private Person testPerson2;
     private AddressBook testAddressBook;
     private AddressBookController testAddressBookController;
+    private FileSystem testFileSystem;
 
 
     @BeforeEach
     void setUp() {
+        testFileSystem = new FileSystem();
         testAddressBook = new AddressBook();
         testAddressBookController = new AddressBookController(testAddressBook);
-        testPerson = new Person("John","Doe","123 Main St","Fort Myers","FL","33901","239-555-1212");
-        testPerson2 = new Person("Mike","Smith","111 Fourth St","Naples","FL","33333","239-123-4567");
+        testPerson = new Person("John", "Doe", "123 Main St", "Fort Myers", "FL", "33901", "239-555-1212");
+        testPerson2 = new Person("Mike", "Smith", "111 Fourth St", "Naples", "FL", "33333", "239-123-4567");
     }
 
     @Test
-    void addTest(){
+    void addTest() {
 
         // Add 2 person objects
         testAddressBookController.add(testPerson);
@@ -35,7 +47,7 @@ public class AddressBookControllerTest {
 
 
     @Test
-    void setTest(){
+    void setTest() {
         // Add testPerson to index 0 of addressbook
         testAddressBookController.add(testPerson);
         assertEquals(testPerson, testAddressBookController.get(0));
@@ -48,7 +60,7 @@ public class AddressBookControllerTest {
     }
 
     @Test
-    void removeTest(){
+    void removeTest() {
 
         // Add two person objects to addressbook
         testAddressBookController.add(testPerson);
@@ -64,7 +76,7 @@ public class AddressBookControllerTest {
     }
 
     @Test
-    void getTest(){
+    void getTest() {
 
         // Add two person objects to addressbook
         testAddressBookController.add(testPerson);
@@ -76,7 +88,7 @@ public class AddressBookControllerTest {
     }
 
     @Test
-    void clearTest(){
+    void clearTest() {
         // Add two person objects to addressbook
         testAddressBookController.add(testPerson);
         testAddressBookController.add(testPerson2);
@@ -95,7 +107,8 @@ public class AddressBookControllerTest {
     }
 
     @Test
-    void getModelTest(){
+    void getModelTest() {
         assertEquals(testAddressBook, testAddressBookController.getModel());
     }
+
 }
